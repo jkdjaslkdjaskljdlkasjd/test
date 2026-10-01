@@ -1,22 +1,10 @@
 # Mod de Sonny 2: estado del proyecto
 
-Última actualización: 01/10/2026 (I35: los 10 fondos de combate en HD).
+Última actualización: 01/10/2026 (I33: cámara del combate HD).
 
 ## Estado actual
 
-- **I35 (vigente, 01/10):** los 10 fondos de combate del usuario (`SONNY2_COMBATE_2K_FINAL.zip`, en `completos/`) cubren los 99 combates.
-  - Cada combate elige su imagen con `__hdBattleMap` (ZoneBG|SkyBG). Todas van en dos capas (`capas.BORDES`).
-  - Los 12 suelos originales se ocultan con envoltorios.
-  - El zoom de los ataques en HD queda al 50 % (`__hdZoomF`), porque al usuario le daba mareo.
-  - JPEG a calidad 88; el SWF pesa 29,4 MB.
-  - SHA `5d5a9beb…576e`.
-- **I34 (01/10):** el combate HD va en dos capas, como el original.
-  - **Cielo:** la imagen entera, quieta.
-  - **Suelo:** la misma imagen con alfa por encima del pie de las montañas. Va en JPEG3 premultiplicado y sigue el zoom y el temblor.
-  - **Diálogo** (`combatScript`): al 62 %, dentro de su cuadro del panel.
-  - **Motivo:** en I33 se movía toda la pantalla con el zoom; el usuario eligió «como el original».
-  - SHA `410c3be6…0021`.
-- **I33 (01/10):** es I32 con la imagen HD del combate siguiendo la cámara del juego (zoom y temblor), igual que el suelo original. En I32 los personajes se despegaban del suelo en cada ataque (video del usuario). SHA `7798ab07…39fc`.
+- **I33 (vigente, 01/10):** es I32 con la imagen HD del combate siguiendo la cámara del juego (zoom y temblor), igual que el suelo original. En I32 los personajes se despegaban del suelo en cada ataque (video del usuario). SHA `7798ab07…39fc`.
 - **Instalación:** cada entrega lleva `INSTALAR.bat` y `RESTAURAR.bat`.
 - **I32 (01/10):** es I31 con los combates de Oberursel (`ZoneBG` = SNOW) en HD a pantalla completa, con la imagen del usuario. Sin panel gris arriba (solo las barras de vida) y con el panel de abajo al 62 % y centrado, como la barra del World Map. Los demás combates siguen clásicos. Ver la sección I32 y `i32/documentacion/COMBATE_HD.md`.
 - **I31 (01/10):** es el `SONNY2.swf` del usuario del 29/09 (I30 + una cárcel HD agregada por otra herramienta) con los fondos de zona corregidos: Zona 1 y Hew vuelven al original; Labyrinth e Il Sanctus en HD con las imágenes del usuario; el pueblo HD sin la franja de 6 px. El código del juego no cambia. Se entrega en `SONNY2_I31_parte1.zip` + `parte2.zip`. Ver la sección I31 y `i31/documentacion/ZONAS_HD.md`.
@@ -645,22 +633,6 @@ En `SONNY2_HD_PARTE2.zip` van `NECESITO.md`, las plantillas con guías, los orig
 
 ## Pendientes
 
-- **Ideas a futuro (01/10, el usuario lo pidió para más adelante; no empezado):** revisar otros juegos y mods de Sonny para adaptar mecánicas, sonidos, imágenes y efectos. Primera referencia: **Sonny (2017)** (https://sonny.wiki.gg/wiki/Sonny_(2017)). No es un mod: es el remake oficial de Armor Games / Krin, en Steam y en iOS.
-  - **Mecánicas posibles:**
-    - **Strains:** ramas elementales a elegir (Fire, Frost, Nature, Shadow, Lightning);
-    - **Evolution:** una barra que se llena atacando o recibiendo daño y da mejoras temporales durante el combate;
-    - más peso de los estados (debilitar, aturdir, sangrado).
-  - **Recursos (sonidos, arte):** serían de un juego comercial. Solo para uso personal del mod, sin distribuirlos.
-- **Mods de la comunidad para Sonny 2** (https://sonny.wiki.gg/wiki/Modding/List_of_Sonny_Mods), a revisar a futuro:
-  - **Puppeter** (Ivan Ivanovich): los enemigos derrotados se vuelven aliados con su equipo. Es una idea para la rama Pack del lobo.
-  - **Madness Combat** (Ivan Ivanovich; usa código de Pissed Rework y Danielas Will): personajes y habilidades nuevos.
-  - **Pissed Rework** (Utopissed, AlphaJon y AdmiralBilly).
-  - **43 Stages**, **Impossible Difficulty** y **Danielas Will** (0Veron1ca00).
-  - **Guaranteed Drops** (Utopissed).
-  - **No Heroic Timer** (UrbanPie950).
-
-  Se distribuyen como `.swf`, así que se pueden abrir con las mismas herramientas (`swfsplit`, `swfcode` y `swfassets`) para sacar mecánicas, sonidos y arte. El usuario tiene que pasar los `.swf`, porque MediaFire no es accesible desde el entorno.
-
 - **Esperando al usuario:**
   - que elija la variante A o B del panel de batalla;
   - que responda las 7 preguntas del rework;
@@ -675,8 +647,7 @@ En `SONNY2_HD_PARTE2.zip` van `NECESITO.md`, las plantillas con guías, los orig
   1. ~~el menú de habilidades en 2K~~ (I30);
   2. revisar las habilidades: el usuario siente que pocas explotan las marcas (Scent, Wounds, Frostbite), salvo unas cuantas. Lo van a conversar antes de tocar nada.
 - **Menú principal en 2K:** el usuario va a pedirle a ChatGPT el fondo del título en 2560x1440 (con y sin el título «SONNY 2», sin textos ni botones) para integrarlo como los fondos HD.
-- **Repositorio GitHub:** desde el 01/10/2026 es `jkdjaslkdjaskljdlkasjd/test` (copia sin fork de `a7kp2mq9xx-cyber/test`, que queda como historial). Mientras sea pública, solo fuente y textos; el SWF, las imágenes, las capturas y `DECOMPILACION_PASO5.zip` se suben cuando el usuario la haga privada.
-- **Stand-by (01/10):** el usuario ve solo la primera imagen de combate en su app; en Ruffle se ven las 10. Sin investigar por pedido suyo.
+- **Repositorio GitHub** `a7kp2mq9xx-cyber/test` (rama `claude/jru-33pp84`, pública): la fuente del rework se puede subir. El juego (SWF) y `DECOMPILACION_PASO5.zip` se suben solo cuando el usuario la haga privada.
 - **2K:** imágenes de pantalla completa para las demás zonas (las da el usuario).
 - **Mod:**
   - Frozen Maw;

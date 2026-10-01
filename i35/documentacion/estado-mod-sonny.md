@@ -675,8 +675,7 @@ En `SONNY2_HD_PARTE2.zip` van `NECESITO.md`, las plantillas con guías, los orig
   1. ~~el menú de habilidades en 2K~~ (I30);
   2. revisar las habilidades: el usuario siente que pocas explotan las marcas (Scent, Wounds, Frostbite), salvo unas cuantas. Lo van a conversar antes de tocar nada.
 - **Menú principal en 2K:** el usuario va a pedirle a ChatGPT el fondo del título en 2560x1440 (con y sin el título «SONNY 2», sin textos ni botones) para integrarlo como los fondos HD.
-- **Repositorio GitHub:** desde el 01/10/2026 es `jkdjaslkdjaskljdlkasjd/test` (copia sin fork de `a7kp2mq9xx-cyber/test`, que queda como historial). Mientras sea pública, solo fuente y textos; el SWF, las imágenes, las capturas y `DECOMPILACION_PASO5.zip` se suben cuando el usuario la haga privada.
-- **Stand-by (01/10):** el usuario ve solo la primera imagen de combate en su app; en Ruffle se ven las 10. Sin investigar por pedido suyo.
+- **Repositorio GitHub** `a7kp2mq9xx-cyber/test` (rama `claude/jru-33pp84`, pública): la fuente del rework se puede subir. El juego (SWF) y `DECOMPILACION_PASO5.zip` se suben solo cuando el usuario la haga privada.
 - **2K:** imágenes de pantalla completa para las demás zonas (las da el usuario).
 - **Mod:**
   - Frozen Maw;

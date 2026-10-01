@@ -34,9 +34,9 @@ Este documento resume lo último que se hizo y cómo seguir. El historial comple
 - **Íconos:** solo íconos de prueba; nunca generar íconos ni imágenes.
 - **Capas del usuario:** respetarlas y no modificarlas: NULL ZONE (`__nz*`), night e i18. Envolver una función suya llamando a la original está bien.
 - **Repo:**
-  - desde el 01/10/2026 es **`jkdjaslkdjaskljdlkasjd/test`** (copia, no fork). La anterior, `a7kp2mq9xx-cyber/test`, queda solo como historial;
-  - el usuario la va a hacer **privada**. Hasta que lo esté, solo se suben la fuente y los textos: **no** el SWF, ni las capturas, ni las imágenes, ni `DECOMPILACION_PASO5.zip`;
-  - la rama principal (por defecto) es `claude/jru-33pp84`, igual que en la anterior; se trabaja ahí y no se abre PR salvo que el usuario lo pida.
+  - es `a7kp2mq9xx-cyber/test` y sigue **pública**;
+  - se trabaja solo en la rama `claude/jru-33pp84`, y no se abre PR salvo que el usuario la pida;
+  - mientras sea pública, solo se suben la fuente y los textos: **no** el SWF, ni las capturas, ni `DECOMPILACION_PASO5.zip`. Ese zip se sube cuando el usuario la haga privada (ya eligió hacerla privada primero).
 - **Commits:** terminan con el trailer de la sesión.
 - **Antes de cambiar habilidades:** conversar con el usuario. Ver la sección 6.
 
@@ -49,7 +49,7 @@ Este documento resume lo último que se hizo y cómo seguir. El historial comple
 | `/home/user/work/paso5/tools/` | Las herramientas (`swfpatch`, `as2comp`, `swfshape`, …) |
 | `/home/user/work/ruffle/` | El arnés de Ruffle (`drive.js`, `page.html`, `page16.html`, `gen/mk.py`, guiones `s_*.json`) |
 | `/home/user/work/entrega_i30/` y `SONNY2_I30.zip` | La última entrega |
-| `/home/user/test/` | La repo: `README.md`, `estado-mod-sonny.md`, este archivo, `i26/` … `i35/` (`LEEME`, `fuente/` y desde I31 `documentacion/`) e `instalador/` |
+| `/home/user/test/` | La repo: `README.md`, `estado-mod-sonny.md`, este archivo e `i26/` … `i30/` (`LEEME` y `fuente/`) |
 
 Si el contenedor es nuevo, `/home/user/work` no existe. La fuente está en `i30/fuente/` de la repo, pero faltan la base I25 y las herramientas: vienen de `DECOMPILACION_PASO5.zip`, que tiene el usuario. Pedírsela.
 
@@ -247,8 +247,7 @@ Las descripciones completas, al rango máximo, se obtienen con el banco: `b.call
 - Las imágenes HD de las demás zonas (cárcel definitiva, Hew, tren, Japón y fondos de combate): las da el usuario. Agregarlas siguiendo `i31/documentacion/ZONAS_HD.md`.
 - El fondo del menú principal en 2K: el usuario lo pide a otra herramienta.
 - Traducir los diálogos, cuando el usuario lo pida.
-- Subir `DECOMPILACION_PASO5.zip`, los SWF, las imágenes y las capturas cuando `jkdjaslkdjaskljdlkasjd/test` sea privada.
-- **En stand-by (pedido del usuario, 01/10):** en su app «solo se muestra la primera imagen» de combate. En Ruffle se ven las 10. No investigar hasta que lo pida.
+- Subir `DECOMPILACION_PASO5.zip`, los SWF y las capturas cuando la repo sea privada.
 
 ## 8. Trampas técnicas conocidas
 
